@@ -1,0 +1,169 @@
+.banner-container {
+  position: relative;
+  margin-bottom: 90px;
+  height: 100vh;
+}
+
+.banner-content {
+  position: absolute;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 5%, transparent 95%);
+}
+
+.featured--horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 5%, transparent 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.banner-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+
+.banner-description {
+  font-size: 15px;
+  text-align: left;
+  max-width: 50%;
+  margin-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.banner-button-assistir,
+.banner-button-list {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  opacity: 1;
+  transition: all ease 0.2s;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.banner-button-assistir:hover,
+.banner-button-list:hover {
+  opacity: 0.7;
+}
+
+
+.banner-button-assistir {
+  background-color: #fff;
+  color: #000;
+}
+
+.banner-button-list {
+  background-color: #333;
+  color: #fff;
+}
+
+.video {
+  width: 100% !important;
+}
+
+.banner-points,
+.banner-votos {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 25px;
+  margin-top: 70px;
+  color: rgb(0, 255, 64);
+
+  .span {
+    color: #fff;
+  }
+}
+
+.banner-points-lanca {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 25px;
+  margin-top: 30px;
+  color: rgb(0, 255, 64);
+
+  .span {
+    color: #fff;
+  }
+}
+
+@media (max-width:760px) {
+  .banner-container {
+    height: 60vh;
+  }
+
+  .banner-content {
+    margin-top: 120px;
+  }
+
+  .banner-title {
+    font-size: 35px;
+    margin-left: -40px;
+  }
+
+  .banner-button-assistir,
+  .banner-button-list {
+    width: 80px;
+    height: 20px;
+    padding: 3px;
+  }
+
+  .banner-points {
+    font-size: 16px;
+    margin-left: -40px;
+  }
+
+  .banner-votos {
+    font-size: 16px;
+  }
+
+  .banner-points-lanca {
+    font-size: 16px;
+    margin-left: -40px;
+  }
+
+  .banner-description {
+    font-size: 12px;
+    max-width: 80%;
+    margin-left: -40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .banner-button-assistir {
+    font-size: 10px;
+    margin-left: -40px;
+  }
+
+  .banner-button-list {
+    font-size: 10px;
+  }
+
+  .video {
+    width: 11% !important;
+    margin-left: -40px;
+    margin-top: -200px;
+  }
+
+}

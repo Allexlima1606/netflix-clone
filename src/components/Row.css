@@ -1,0 +1,51 @@
+.row-container {
+  margin-left: 10px;
+  color: white;
+}
+
+.row-cards {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  
+}
+
+.row-cards::-webkit-scrollbar {
+  
+}
+.movie-card {
+  object-fit: contain;
+  width: 160%;
+  max-height: 250px;
+  transition: transform 450ms;
+  
+}
+
+.movie-card-large {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: transform 450ms;
+}
+
+.row-cards img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+}
+
+.row-cards img:hover {
+  transform: scale(1);
+}
+
+.video {
+  width: 100% !important;
+}
+
+
+
+@media (max-width:760px) {
+  .row-container{
+    opacity: 1;
+  }
+}

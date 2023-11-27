@@ -1,0 +1,46 @@
+.nav-container {
+    background-color: #000000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: all ease 0.4s;
+}
+
+.nav-logo {
+    position: fixed;
+    left: 30px;
+    width: 120px;
+}
+
+.nav-avatar {
+    position: fixed;
+    right: 30px;
+    width: 40px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+
+.nav-container-black {
+    background-color: #000000;
+}
+
+@media (max-width:760px) {
+    .nav-container {
+    height: 50px;
+    }
+    .nav-logo {
+      height: 20px;
+      margin-left: -40px;
+    }
+    .nav-avatar {
+        height: 20px;
+        margin-right: -20px;
+    }
+}
