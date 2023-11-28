@@ -48,4 +48,9 @@
   .row-container{
     opacity: 1;
   }
+.video {
+  width: 100% !important;
+  margin-top: -20px;
+
+}
 }
